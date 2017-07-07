@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="author" content="Amber Tseng">
+    <title>网上申请 | 中环百联业务受理系统</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  	<!--[if lte IE 6]>
+  	<link rel="stylesheet" type="text/css" href="css/bootstrap-ie6.css">
+  	<link rel="stylesheet" type="text/css" href="css/ie.css">
+  	<![endif]-->
+  	<!--[if lt IE 9]>
+  	<script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
+  	<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  	<![endif]-->
+  </head>
+
+<body class="appBody">
+  <div class="pageN">
+    <div class="pageTaC">
+
+    <nav class="nav navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+          <button class="navbar-toggle navbar-togglePos" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="http://www.bl.com/?cm_mmc=baidu-_-Brand-_-0-_-0" class="navbar-brand detailLogo">
+            <img src="img/logo.png" >
+          </a>  
+        </div>
+
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navDetail">
+            <li role="presentation"><a href="index.html">首页</a></li>
+            <li role="presentation">
+              <a href="tenant.html">租户</a>
+            </li>
+            <li class="dropdown" role="presentation">
+              <a href="operator.html" class="dropdown-toggle" data-toggle="dropdown">运营商<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="operator.html">施工规则</a></li>
+                <li class="divider"></li>
+                <li><a href="application.html">网上申请</a></li>
+                <li class="divider"></li>
+                <li><a href="application.html">搜索</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+    </nav>
+  
+   <div style="height: 60px;"></div>
+      
+  <div class="container ">
+      <p class="appTitle">通信服务施工申请表</p>
+
+      <div class="table-responsive tableDimen">
+        <table class="table table-bordered applicationMain">
+          <tr class="form-horizontal" role="form">
+            <td rowspan="2" colspan="2" class="col-md-5 taHeader form-group"><label class="taSpan">申请单位：百联中环信息服务中心</label></td>
+            <td colspan="2" class="form-group"><label for="conDate" >施工日期：</label>
+              <input type="date" id="conDate" name="conDate" class="form-control inInput input-lg conDateItem" placeholder="2016-07-07"> 至 <input type="date" id="conDate" name="conDate" class="form-control inInput input-md conDateItem" placeholder="2016-08-07">
+            </td>
+          </tr>
+
+          <tr>
+          <td colspan="2"><label for="conTime">施工时间：</label>
+            <input type="time" id="conTime" name="conTime" class="form-control inInput input-lg conDateItem" placeholder="09:00"> 至 <input type="time" id="conTime" name="conTime" class="form-control inInput input-lg conDateItem" placeholder="18:00">
+            <div class="conDateDetail">
+              <label class="checkbox-inline"><input type="checkbox" id="timeCheckbox" value="option1">白天</label>
+              <label class="checkbox-inline"><input type="checkbox" id="timeCheckbox" value="option2">夜间</label>
+            </div>
+          </td>
+          </tr>
+
+          <tr>
+            <td colspan="2" ><label for="applicant" class="control-label">申请人：</label><input type="text" class="form-control inInputR input-lg restTab1" id="applicant" name="applicant"></td>
+            <td colspan="2"><label for="operator" class="control-label">运营商名称：</label><input type="text" class="form-control inInputR input-lg restTab2" id="operator" name="operator"></td>
+          </tr>
+
+
+          <tr>
+            <td colspan="2"><label for="unit">施工单位名称：</label><input type="text" class="form-control inInputR input-lg restTab3" id="unit" name="unit"></td>
+            <td colspan="2"><label for="certify">资质证明：</label><input type="text" class="form-control inInputR input-lg restTab4" id="certify" name="certify"></td>
+          </tr>
+          <tr><td colspan="4">
+          	<label for="detail">施工项目及原因</label>
+          	<textarea name="detail" id="detail" class="input-lg"></textarea>
+          	<span class="help-block">* 250字以内</span>
+          </td></tr>
+          <tr><td colspan="4"><label for="area">施工区域</label><textarea id="area" name="area"  class="input-lg" maxlength="25"></textarea><span class="help-block">* 250字以内</span></td></tr>
+          <tr><td colspan="4"><label for="staff">具体施工人员</label><textarea id="staff" name="staff" class="input-lg"></textarea><span class="help-block">* 250字以内</span></td></tr>
+          <tr>
+            <td colspan="2"><label for="unitHead">施工单位负责人：</label><input type="text" class="form-control inInputR input-lg restTab5" id="unitHead" name="unitHead"></td>
+            <td colspan="2"><label for="unitPho">联系电话：</label><input type="tel" class="form-control inInputR input-lg restTab7" size="15" id="unitPho" name="unitPho"></td>
+          </tr>
+          <tr>
+            <td colspan="2"><label for="spotHead">施工现场负责人：</label><input type="text" class="form-control inInputR input-lg restTab5" id="spotHead" name="spotHead"></td>
+            <td colspan="2"><label for="spotPho">联系电话：</label><input type="tel" class="form-control inInputR input-lg restTab7" id="spotPho" name="spotPho"></td>
+          </tr>
+          <tr>
+            <td colspan="2"><label for="security">施工安全员：</label><input type="text" class="form-control inInputR input-lg restTab6" id="security" name="security"></td>
+            <td colspan="2"><label for="securPho">联系电话：</label><input type="tel" class="form-control inInputR input-lg restTab7" id="securPho" name="securPho"></td>
+          </tr>
+          <tr><td colspan="4">安全告知书：</td></tr>
+          <tr><td colspan="4">1.确保施工场地符合作业安全要求，已具备施工条件。施工单位做好相应安全措施及施工人员的安全教育工作，严格按照相关操作规程进行操作。施工现场及周边区域严禁吸烟，一旦发现在施工现场吸烟情况，进行相应处罚。施工单位负责人（安全员）对施工现场的安全及施工人员人生安全负责。</td></tr>
+          <tr><td colspan="4">2.现场配备足够数量灭火器材（ABC干粉3KG），50平方米配一组，50-100平方米配二组，100-150配三组，以此类推。</td></tr>
+          <tr><td colspan="4">3.施工中需动火工作应事先提前1-2工作日办理相关动火手续。</td></tr>
+          <tr><td colspan="4">4.商场内现有消防设备设施严禁私自挪动（用）。一旦发现私自使用消防水源，将进行相应处罚。</td></tr>
+          <tr><td colspan="4">5.此施工申请表一式三份，施工申请单位1份，行政保障部1份，物业办公室办理手续1份。</td></tr>
+          <tr><td colspan="4">6.施工单位第一次办理施工手续时必须提供加盖公章的营业执照证明备案及施工人员身份证复印件。如需申请夜间施工的必须提前4小时申请办理相关手续，确需夜间施工的，需支付相应费用。</td></tr>
+          <tr><td colspan="4">7.需进购物广场弱电井道内施工的，凭此表至物业办理借用弱电井道钥匙流程，施工完毕后由物业派员进行现场复查，确保井道内设备设施无人为损坏，施工现场打扫干净。</td></tr>
+          <tr><td colspan="4">8.施工单位应为运营商授权委托的运维公司，非授权委托单位如需进入百联中环购物广场通信机房及弱电井道，必须由运营商出具书面证明材料。</td></tr>
+          <tr><td colspan="4">9.此表最终审核批准为百联中环购物广场行政保障部。</td></tr>
+          <tr>
+            <td> 
+              <div class="footerItem">
+                <label>信息服务中心盖章：</label>
+              </div>
+              <div class="footerItem">
+                <label for="firstFootSign">签名：</label> 
+                <input type="text" class="form-control input-md inInputR restTab8" id="firstFootSign" name="firstFootSign">
+              </div>
+              <div class="footerItem">
+                <label for="firstFootDate">日期：</label>
+                <input type="date" class="form-control input-md inInputR restTab8" id="firstFootDate" name="firstFootDate">
+              </div>
+            </td>
+            <td>
+              <div class="footerItem">
+                <label for="secondFootUnit">施工单位：</label>
+                <input type="text" class="form-control input-md inInputR restTab9" id="secondFootUnit" name="secondFootUnit">
+              </div>
+              <div class="footerItem">
+                <label for="secondFootSign">签名：</label>
+                <input type="text" class="form-control input-md inInputR restTab8" id="secondFootSign" name="secondFootSign">
+              </div>
+              <div class="footerItem">
+                <label for="secondFootDate">日期：</label>
+                <input type="date" class="form-control input-md inInputR restTab8" id="secondFootDate" name="secondFootDate">
+              </div>
+            </td>
+            <td>
+            <div class="footerItem">
+              <label for="thirdFootAdv">保障部意见：</label>
+              <input type="text" class="form-control input-md inInputR restTab10" id="thirdFootAdv" name="thirdFootAdv">
+            </div>
+            <div class="footerItem">
+              <label for="thirdFootSign">签名：</label>
+              <input type="text" class="form-control input-md inInputR restTab8" id="thirdFootSign" name="thirdFootSign">
+            </div>
+            <div class="footerItem">
+              <label for="thirdFootDate">日期：</label>
+              <input type="date" class="form-control input-md inInputR restTab8" id="thirdFootDate" name="thirdFootDate">
+            </div>
+            </td>
+            <td>
+            <div class="footerItem">
+              <label for="fourthFootAdv">物业部意见：</label>
+              <input type="text" class="form-control input-md inInputR restTab10" id="fourthFootAdv" name="fourthFootAdv">
+            </div>
+            <div class="footerItem">
+              <label for="fourthFootSign">签名：</label>
+              <input type="text" class="form-control input-md inInputR restTab8" id="fourthFootSign" name="fourthFootSign">
+            </div>
+            <div class="footerItem">
+              <label for="fourthFootDate">日期：</label>
+              <input type="date" class="form-control input-md inInputR restTab8" id="fourthFootDate" name="fourthFootDate">
+            </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="row row-submit">
+      <button type="button" id="" class="btn btn-primary">预览</button>
+      <button type="button" id="submit" class="btn btn-primary" data-toggle="modal" data-target="#myModal">提交</button>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <div class="goTop">  
+      <a href="#top"><img src="img/top10.png" alt=""></a>  
+    </div>  
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        </div>
+        <div class="modal-body"><p class="tipsP">温馨提示</p><p>您所填写的信息不完整!</p></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary btn-xs">编辑</button>
+          <button type="button" class="btn btn-primary btn-xs">取消</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>中环百联业务受理系统</footer>
+
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/docs.js"></script>
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+<script src="js/form.js"></script>
+<!--[if lte IE 6]>
+<script type="text/javascript" src="js/bootstrap-ie.js"></script>
+<![endif]-->
+
+</body></html>
